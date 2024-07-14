@@ -15,6 +15,8 @@ public class Circle extends Shape2D{
     @Override
     public double getArea() {
        //A = π * r ^ 2
-       return Math.PI * this.radius * this.radius;
+       double area = Math.PI*(Math.pow(radius, radius));
+    //    return Math.PI * this.radius * this.radius;
+       return area;
     } 
 }
