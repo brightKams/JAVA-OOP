@@ -13,6 +13,12 @@ public class ShapesTester {
         shapes.add(s3);
         for (BasicShape shape : shapes) {
             System.out.println(shape);
+
+            
+            if(shape instanceof Circle) {
+                Circle circle = (Circle) shape;
+                System.out.println(circle.getArea());
+            }
         }
     }
 }
