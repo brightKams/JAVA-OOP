@@ -40,6 +40,11 @@ public class FootballTeam {
         }
         return output;
     }
+
+    public void getPlayerList2() {
+        System.out.println(team);
+        
+    }
     public void displayAllPlayerDetails2(){
         for (Player player : team){
             if (player instanceof Defender){
@@ -128,7 +133,9 @@ public class FootballTeam {
         // System.out.println(aberdeenFC.getPlayerList());
 
         //System.out.println(aberdeenFC.toString());
-        aberdeenFC.displayAllPlayerDetails2();
+        // aberdeenFC.displayAllPlayerDetails2();
+        System.out.println(aberdeenFC.getManager());
+        // aberdeenFC.getPlayerList2();
         
     }
     
