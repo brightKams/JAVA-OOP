@@ -4,6 +4,8 @@ public abstract class Account {
     
     private double balance;
     private int transactions ;
+    // public double balance;
+    // public int transactions ;
 
     public  Account(double balance) {
         this.balance = balance;

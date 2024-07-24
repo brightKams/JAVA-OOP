@@ -9,11 +9,11 @@ public class TransFeeAccount extends Account{
 
     public void withdraw(double amount) {
         withdraw(amount);
-        this.withdrawCount +=1 ;
+        this.withdrawCount +=1;
     }
 
     public void processEndMonthCharge(){
-       withdraw(withdrawCount * this.withdrawCharge) ;
+       withdraw(withdrawCount * this.withdrawCharge);
         withdrawCount = 0;
     }
 }

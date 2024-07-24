@@ -23,7 +23,7 @@ public class AccountTest {
                 break;
         } 
 
-        System.out.println("Creating a random account: " + account.getAccountType() + " " + account.getBalance());
+        System.out.println("Creating a random account: " + account.getAccountType() + "\nAccount Balance - " + account.getBalance());
         return (account) ;
     }
     
@@ -31,7 +31,7 @@ public class AccountTest {
         // Create some assoted accounts
         Account[] accounts = new Account[num_accounts];
         // Create different types of account at random
-        System.out.println("\nCreating " + num_accounts + " at random\n");
+        System.out.println("\nCreating " + num_accounts + " accounts at random\n");
         for (int i = 0; i < accounts.length; i++) {
             accounts[i] = randomAccount();
         }
@@ -41,7 +41,7 @@ public class AccountTest {
             // select a created account at random
             int accountNum = rand.nextInt(accounts.length);
             Account currentAccount = accounts[accountNum];
-            // now get an integer at random from 0 to 1
+            // now get an integer at random from 0 to 99
             int randomNumber = rand.nextInt(100);
             // System.out.println("Random number: " + randomNumber);
             // if random number is zero we withdraw, otherwise we deposit
